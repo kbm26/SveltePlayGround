@@ -2,4 +2,4 @@
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
-<p1>this search</p1>
+<h1>{data.name}</h1>
