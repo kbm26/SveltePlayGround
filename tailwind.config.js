@@ -2,6 +2,7 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
+    
     mytheme: {
           
       "primary": "#b53056",
@@ -22,7 +23,12 @@ export default {
                
       "error": "#dc2837",
                },
-    extend: {}
+    extend: {   
+      zIndex: {
+        '-1': '-1',
+         '1': '1',
+      },
+    }
   },
   plugins: [
     require('daisyui')
