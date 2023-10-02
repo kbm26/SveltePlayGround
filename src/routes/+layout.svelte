@@ -24,9 +24,5 @@
     
   
 </script>
-
 <Nav/>
-
-
-
 <slot/>

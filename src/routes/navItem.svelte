@@ -1,17 +1,20 @@
-<script>
-    import {page} from '$app/stores'
-    import  {open} from './navbar.svelte'
-    export let  active = $page.url.pathname  
+<script> 
     export let href = ''
     export let name = ''
-    
-    
- 
+    let active = false;
+    let names = ["watchlist","search","featured","profile"]
+
+    $:{
+        if(active){
+
+            console.log("k")
+            
+        }
+    }
 
 
 </script>
 
-
 <li class="mx-4 my-6 md:my-0">
-    <a class=" text-lg text-teal-400"  href={href}>{name}</a>
+    <a  on:click={()=> {active = !active} } id={name}  class:active  class=" text-lg text-black"  href={href}>{name}</a>
 </li>
