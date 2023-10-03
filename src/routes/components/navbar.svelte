@@ -1,8 +1,8 @@
 <script>
     import NavItem from './navItem.svelte';
     import Hamburger from 'svelte-hamburger';
-    let names = ["watchlist","search","featured","profile"]
-    let links = ["/watchlist/","/search/","/featured/","/profile/"]
+    let names = ["About","Experience","Projects","Contact"]
+    let links = ["#About","#Experience","#Projects","#Contact"]
     let open = false;
     let duoLine = false;
 
@@ -31,7 +31,7 @@
     <ul class=" dropdown-content justify-between  w-52 md:flex md:items-center md:static absolute bg-white left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top-[-400px] transition-all ease-in duration-500">
         <NavItem  bind:name={names[0]} bind:href={links[0]} />
         <NavItem  bind:name={names[1]} bind:href={links[1]} />
-        <NavItem   bind:name={names[2]} bind:href={links[2]} />
+        <NavItem  bind:name={names[2]} bind:href={links[2]} />
         <NavItem  bind:name={names[3]} bind:href={links[3]} />
     </ul>
   </nav>
