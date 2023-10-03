@@ -1,5 +1,5 @@
 <script>
-    import NavItem from './navItem.svelte';
+    import NavItem from '../navItem.svelte';
     import Hamburger from 'svelte-hamburger';
     let names = ["watchlist","search","featured","profile"]
     let links = ["/watchlist/","/search/","/featured/","/profile/"]

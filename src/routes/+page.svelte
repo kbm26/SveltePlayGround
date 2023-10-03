@@ -1,6 +1,6 @@
 <script>
     /** @type {import('./$types').LayoutData} */
-    // export let data;
+    import NavBar from './components/navbar.svelte';
 </script>
 <h1>Welcome to WPS</h1>
-
+<NavBar/>
